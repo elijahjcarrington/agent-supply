@@ -1,12 +1,17 @@
 /*Global*/
 
-html, body {
+html {
   font-size: 16px;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
   font-family: Helvetica, sans-serif;
   font-weight: normal;
 }
 
-.flex-row {
+.flex {
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
@@ -21,15 +26,18 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   color: white;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 h1 {
-  font-weight: lighter;
+  font-size: 2rem;
 }
 
-.upper {
-  text-transform: uppercase;
+h2 {
+  font-size: 1.75rem;
 }
+
 
 /*Header*/
 
@@ -39,14 +47,15 @@ header {
   background-color: black;
 }
 
-header .logo {
+.logo {
   width: 80%;
   margin: 0 auto;
 }
 
-header h1 {
+header h4 {
   margin: auto 10px;
   letter-spacing: 0.15em;
+  font-weight: lighter;
 }
 
 header img {
@@ -56,6 +65,32 @@ header img {
 }
 
 /*Content*/
+
+.hero {
+  background-image: url("../img/moto.jpeg");
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 30rem;
+}
+
+.overlay {
+  position: absolute;
+  padding: 3rem;
+  margin: 12rem 0;
+  background-color: black;
+}
+
+.overlay h4 {
+  margin-bottom: 2rem;
+}
+
+
+
 
 /*Footer*/
 
