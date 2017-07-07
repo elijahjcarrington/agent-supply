@@ -117,13 +117,13 @@ header img {
 }
 
 
-/*Shop*/
+/*Menu*/
 
 .shop {
   height: 60em;
 }
 
-.categories {
+.categories, .categories-mobile {
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -134,7 +134,7 @@ header img {
   background-color: firebrick;
 }
 
-.categories ul li {
+.categories ul li, .categories-mobile ul li {
   padding: 1em;
   margin: 1em;
   display: inline-flex;
@@ -142,20 +142,23 @@ header img {
   flex: 1 auto;
 }
 
-.categories ul li a {
+.categories ul li a, .categories-mobile ul li a {
   color: white;
   text-decoration: none;
 }
 
-.categories ul li a h3, .description h3 {
+.categories ul li a h3, .categories-mobile ul li a h3, .description h3 {
   font-weight: lighter;
   font-size: 1.125rem;
   letter-spacing: 0.25em;
 }
 
+
+/*Shop*/
+
 .container {
-  max-width: 80%;
-  margin: 2em auto 0 auto;
+  max-width: 90%;
+  margin: 4em auto 0 auto;
 }
 
 .gadgets {
@@ -192,8 +195,87 @@ header img {
 }
 
 
+/*Information*/
+
+.information {
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: center;
+  align-items: baseline;
+}
+
+.information .section {
+  border: 4px solid black;
+  clear: both;
+  margin: 5.2em;
+  width: 20em;
+}
+
+.information .section p {
+  padding: 1em;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+
 
 /*Footer*/
+
+footer {
+  margin-top: 2em;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-content: center;
+  background-color: black;
+}
+
+footer p {
+  color: white;
+  float: left;
+  text-align: left;
+  margin: auto 10%;
+}
+
+
+/*Queries*/
+
+.categories-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  header h4 {
+    font-size: 1.3em;
+  }
+  .categories-mobile {
+    display: flex;
+  }
+  .categories {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  footer p {
+    float: none;
+    text-align: center;
+    margin: auto auto;
+  }
+  header h4 {
+    display: none;
+  }
+  header img {
+    height: 35px;
+    width: 50px;
+    margin: auto auto;
+    display: block;
+  }
+}
 
 
 /**/
