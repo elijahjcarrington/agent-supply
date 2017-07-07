@@ -1,7 +1,7 @@
 /*Global*/
 
 html {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 html, body {
@@ -11,12 +11,6 @@ html, body {
   font-weight: normal;
 }
 
-.flex {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-start;
-  align-content: center;
-}
 
 /*Typography*/
 
@@ -32,10 +26,29 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 2rem;
+  line-height: 2.25rem;
 }
 
 h2 {
   font-size: 1.75rem;
+  line-height: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+h5 {
+  font-size: 0.9rem;
+}
+
+h6 {
+  font-size: 0.8rem;
 }
 
 
@@ -44,12 +57,20 @@ h2 {
 header {
   width: 100%;
   height: 100px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-content: center;
   background-color: black;
 }
 
 .logo {
   width: 80%;
   margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-content: center;
 }
 
 header h4 {
@@ -64,7 +85,8 @@ header img {
   margin: auto 10px;
 }
 
-/*Content*/
+
+/*Hero*/
 
 .hero {
   background-image: url("../img/moto.jpeg");
@@ -75,25 +97,85 @@ header img {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 30rem;
+  height: 30em;
 }
 
 .overlay {
+  width: 20em;
+  padding: 3em;
+  margin: 12em 0 12em 10%;
   position: absolute;
-  padding: 3rem;
-  margin: 12rem 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-content: center;
   background-color: black;
 }
 
 .overlay h4 {
-  margin-bottom: 2rem;
+  margin-bottom: 2em;
 }
 
 
+/*Shop*/
+
+.shop {
+  height: 60em;
+}
+
+.categories {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  background-color: firebrick;
+}
+
+.categories ul li {
+  padding: 1em;
+  margin: 1em;
+  display: inline-flex;
+  list-style: none;
+  flex: 1 auto;
+}
+
+.categories ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.categories ul li a h3 {
+  font-weight: lighter;
+  font-size: 1.125rem;
+  letter-spacing: 0.25em;
+}
+
+.gadgets {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  flex-flow: row wrap;
+}
+
+.item {
+  display: flex;
+  border: 3px solid black;
+  flex: 1 auto;
+  margin: 2em;
+}
+
+.item img {
+  border: 1px solid red;
+  max-width: 200px;
+  display: block;
+  margin: auto;
+}
 
 
 /*Footer*/
-
 
 
 /**/
